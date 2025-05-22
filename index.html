@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hizru Car</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>CLASS 10</h1>
+                    <p>Hizru Control Panel</p>
+                </div>
+            </div>
+            <button id="dark-mode-toggle" class="icon-btn" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="connection-status">
+                <span class="status-dot" id="connection-dot"></span>
+                <span class="status-text" id="connection-text">Connecting...</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="video-panel">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-video"></i> Live Feed</h2>
+                        <div class="panel-actions">
+                            <button class="icon-btn" title="Expand"><i class="fas fa-expand"></i></button>
+                            <button class="icon-btn" title="Settings"><i class="fas fa-cog"></i></button>
+                        </div>
+                    </div>
+                    <div class="video-container">
+                        <img id="videoStream" alt="Live camera feed" class="live-feed" />
+                        <div class="video-overlay">
+                            <div class="recording-indicator">
+                                <span class="recording-dot"></span>
+                                <span>REC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="controls-panel">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-sliders-h"></i> Navigation Controls</h2>
+                    </div>
+                    <div id="controls">
+                        <div class="control-group">
+                            <button class="control-btn primary" data-command="start">
+                                <i class="fas fa-play"></i>
+                                <span>Start</span>
+                            </button>
+                            <button class="control-btn warning" data-command="stop">
+                                <i class="fas fa-stop"></i>
+                                <span>Stop</span>
+                            </button>
+                            <button class="control-btn" data-command="forward">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>Forward</span>
+                            </button>
+                            <button class="control-btn" data-command="right">
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Right</span>
+                            </button>
+                            <button class="control-btn" data-command="left">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Left</span>
+                            </button>
+                            <button class="control-btn" data-command="reverse">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>Reverse</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chat-panel">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-terminal"></i> Command Console</h2>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message system">
+                                <div class="message-content">
+                                    <strong>System:</strong> Roboat control system initialized and ready for commands.
+                                </div>
+                                <div class="message-time">10:42:35</div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="message-input" placeholder="Enter command...">
+                            <button id="send-btn" class="icon-btn primary" title="Send">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-left">
+                <span>class 10 copyright</span>
+                <span>model 1</span>
+            </div>
+            <div class="footer-right">
+                <button class="text-btn"><i class="fas fa-question-circle"></i> Help</button>
+                <button class="text-btn"><i class="fas fa-cog"></i> Settings</button>
+                <button class="text-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "axios": "^1.9.0",
+    "express": "^5.1.0",
+    "multiparty": "^4.2.3",
+    "serialport": "^13.0.0",
+    "ws": "^8.18.2"
+  },
+  "name": "coding",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DK691/Coding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DK691/Coding/issues"
+  },
+  "homepage": "https://github.com/DK691/Coding#readme",
+  "description": ""
+}
