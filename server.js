@@ -8,7 +8,7 @@ const wss = new WebSocket.Server({ server });
 
 // Serve static files like index.html, styles.css, script.js
 app.use(express.static(__dirname));
-
+//ok
 // Optional: Use axios if you're forwarding commands via HTTP to ESP32
 // Run: npm install axios
 const axios = require('axios');
